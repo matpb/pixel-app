@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy — Pixel</title>
+    <meta name="description" content="Privacy Policy for the Pixel Chrome Extension.">
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎨</text></svg>">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+
+        *, *::before, *::after {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --bg: #0a0a0f;
+            --bg-card: #12121a;
+            --border: #1e1e2e;
+            --text: #e4e4ed;
+            --text-muted: #8888a0;
+            --accent: #7c5cfc;
+            --accent-light: #9d84fd;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            -webkit-font-smoothing: antialiased;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+
+        nav {
+            padding: 24px 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-weight: 700;
+            font-size: 1.25rem;
+            text-decoration: none;
+            color: var(--text);
+        }
+
+        .logo-icon {
+            width: 36px;
+            height: 36px;
+            background: linear-gradient(135deg, #7c5cfc, #c084fc);
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 18px;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 32px;
+        }
+
+        .nav-links a {
+            color: var(--text-muted);
+            text-decoration: none;
+            font-size: 0.9rem;
+            font-weight: 500;
+            transition: color 0.2s;
+        }
+
+        .nav-links a:hover {
+            color: var(--text);
+        }
+
+        .policy-content {
+            max-width: 720px;
+            margin: 60px auto 100px;
+        }
+
+        .policy-content h1 {
+            font-size: 2.25rem;
+            font-weight: 800;
+            letter-spacing: -0.02em;
+            margin-bottom: 8px;
+        }
+
+        .last-updated {
+            color: var(--text-muted);
+            font-size: 0.9rem;
+            margin-bottom: 48px;
+        }
+
+        .policy-content h2 {
+            font-size: 1.25rem;
+            font-weight: 700;
+            margin-top: 40px;
+            margin-bottom: 16px;
+            color: var(--text);
+        }
+
+        .policy-content p {
+            color: var(--text-muted);
+            font-size: 0.95rem;
+            line-height: 1.75;
+            margin-bottom: 16px;
+        }
+
+        .policy-content ul {
+            padding-left: 24px;
+            margin-bottom: 16px;
+        }
+
+        .policy-content li {
+            color: var(--text-muted);
+            font-size: 0.95rem;
+            line-height: 1.75;
+            margin-bottom: 8px;
+        }
+
+        .policy-content strong {
+            color: var(--text);
+            font-weight: 600;
+        }
+
+        .policy-content a {
+            color: var(--accent-light);
+            text-decoration: none;
+        }
+
+        .policy-content a:hover {
+            text-decoration: underline;
+        }
+
+        .highlight-box {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 20px 24px;
+            margin: 20px 0;
+        }
+
+        .highlight-box p {
+            margin-bottom: 0;
+        }
+
+        footer {
+            padding: 40px 0;
+            border-top: 1px solid var(--border);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 0.85rem;
+            color: var(--text-muted);
+        }
+
+        footer a {
+            color: var(--text-muted);
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+
+        footer a:hover { color: var(--text); }
+
+        .footer-links {
+            display: flex;
+            gap: 24px;
+        }
+
+        @media (max-width: 768px) {
+            .nav-links { display: none; }
+            footer {
+                flex-direction: column;
+                gap: 16px;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <a href="/" class="logo">
+                <div class="logo-icon">P</div>
+                Pixel
+            </a>
+            <div class="nav-links">
+                <a href="/">Home</a>
+                <a href="/#features">Features</a>
+                <a href="/#pricing">Pricing</a>
+                <a href="privacy.html">Privacy</a>
+            </div>
+        </nav>
+
+        <div class="policy-content">
+            <h1>Privacy Policy</h1>
+            <p class="last-updated">Last updated: March 30, 2026</p>
+
+            <p>Pixel ("the Extension") is a Chrome extension that converts screenshots into code using AI. We are committed to protecting your privacy. This policy explains what data the Extension processes, how it is handled, and your rights.</p>
+
+            <div class="highlight-box">
+                <p><strong>The short version:</strong> Your data stays on your device. Screenshots and code are sent directly to your chosen AI provider using your own API key. We never see, collect, or store your content.</p>
+            </div>
+
+            <h2>1. Data We Collect</h2>
+            <p><strong>We do not collect any personal data.</strong> The Extension operates entirely on your local device. Specifically:</p>
+            <ul>
+                <li><strong>No analytics or tracking.</strong> We do not use Google Analytics, telemetry, or any tracking scripts.</li>
+                <li><strong>No account required.</strong> You do not need to create an account to use the free tier.</li>
+                <li><strong>No server-side processing.</strong> There is no Pixel backend server. The Extension communicates directly with your chosen AI provider.</li>
+            </ul>
+
+            <h2>2. Data Processed Locally</h2>
+            <p>The following data is stored locally on your device using Chrome's built-in storage APIs (<code>chrome.storage.local</code>):</p>
+            <ul>
+                <li><strong>API keys</strong> — Your AI provider API keys (Claude, OpenAI, Gemini) are stored locally and never transmitted to us.</li>
+                <li><strong>Conversion history</strong> — Screenshots and generated code are saved in your browser's local storage for your convenience.</li>
+                <li><strong>Settings</strong> — Your preferences (language, selected provider, theme) are stored locally.</li>
+            </ul>
+            <p>You can delete all locally stored data at any time by removing the Extension or clearing its storage via Chrome's extension settings.</p>
+
+            <h2>3. Data Sent to Third Parties</h2>
+            <p>When you perform a conversion, the Extension sends the following data <strong>directly to your chosen AI provider</strong>:</p>
+            <ul>
+                <li>The captured screenshot image</li>
+                <li>Extracted DOM structure from the captured area (for improved accuracy)</li>
+                <li>Your prompt/instructions for the conversion</li>
+            </ul>
+            <p>This data is sent using <strong>your own API key</strong> and is subject to the privacy policy of the AI provider you choose:</p>
+            <ul>
+                <li><a href="https://www.anthropic.com/privacy" target="_blank">Anthropic (Claude) Privacy Policy</a></li>
+                <li><a href="https://openai.com/privacy" target="_blank">OpenAI Privacy Policy</a></li>
+                <li><a href="https://policies.google.com/privacy" target="_blank">Google (Gemini) Privacy Policy</a></li>
+            </ul>
+            <p>We have no access to the data you send to these providers and receive no copies of your requests or responses.</p>
+
+            <h2>4. Payment Processing</h2>
+            <p>If you purchase the Pro tier ($14.99 lifetime), payment is processed by <a href="https://extensionpay.com" target="_blank">ExtensionPay</a> (powered by Stripe). We receive confirmation of your purchase status but <strong>never see your payment details</strong> (credit card number, billing address, etc.). Payment data is handled entirely by Stripe under their <a href="https://stripe.com/privacy" target="_blank">privacy policy</a>.</p>
+
+            <h2>5. Permissions</h2>
+            <p>The Extension requests the following Chrome permissions:</p>
+            <ul>
+                <li><strong>activeTab</strong> — To capture screenshots of the current tab when you click "Capture".</li>
+                <li><strong>storage</strong> — To save your settings, API keys, and conversion history locally.</li>
+                <li><strong>sidePanel</strong> — To display the Extension's interface in Chrome's side panel.</li>
+            </ul>
+            <p>No permissions are used to collect or transmit your browsing data.</p>
+
+            <h2>6. Children's Privacy</h2>
+            <p>The Extension is not directed at children under 13. We do not knowingly collect data from children.</p>
+
+            <h2>7. Changes to This Policy</h2>
+            <p>We may update this privacy policy from time to time. Changes will be posted on this page with an updated "Last updated" date. Continued use of the Extension after changes constitutes acceptance of the updated policy.</p>
+
+            <h2>8. Contact</h2>
+            <p>If you have questions about this privacy policy or the Extension, you can reach us at:</p>
+            <ul>
+                <li>Email: <a href="mailto:bourgeois.mat@gmail.com">bourgeois.mat@gmail.com</a></li>
+                <li>GitHub: <a href="https://github.com/matpb/pixel-app/issues" target="_blank">Open an issue</a></li>
+            </ul>
+        </div>
+
+        <footer>
+            <span>&copy; 2026 Pixel. Built by <a href="https://github.com/matpb" target="_blank">Mat</a>.</span>
+            <div class="footer-links">
+                <a href="/">Home</a>
+                <a href="privacy.html">Privacy Policy</a>
+                <a href="https://github.com/matpb/pixel-app" target="_blank">GitHub</a>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
