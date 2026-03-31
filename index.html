@@ -537,10 +537,6 @@
 
         .provider:hover { opacity: 1; }
 
-        .provider svg {
-            width: 28px;
-            height: 28px;
-        }
 
         /* CTA Section */
         .cta-section {
@@ -823,8 +819,8 @@
             <div class="features-grid">
                 <div class="feature-card">
                     <div class="feature-icon">&#128247;</div>
-                    <h3>Smart Capture</h3>
-                    <p>Select any area of the screen or capture the full page. Pixel intelligently extracts the DOM structure alongside the screenshot for pixel-perfect results.</p>
+                    <h3>Smart Capture + DOM Extraction</h3>
+                    <p>Capture full pages or select specific areas. Pixel extracts the actual DOM — fonts, colors, SVGs, CSS variables — alongside the screenshot for pixel-perfect accuracy.</p>
                 </div>
                 <div class="feature-card">
                     <div class="feature-icon">&#9889;</div>
@@ -834,12 +830,12 @@
                 <div class="feature-card">
                     <div class="feature-icon">&#128187;</div>
                     <h3>Clean Code Output</h3>
-                    <p>Get production-ready HTML, React, Vue, or Tailwind CSS. Not just a rough approximation — clean, semantic, responsive code.</p>
+                    <p>Get production-ready code in 5 frameworks: HTML + CSS, Tailwind, React, Vue, or Bootstrap. Clean, semantic, responsive output.</p>
                 </div>
                 <div class="feature-card">
                     <div class="feature-icon">&#127912;</div>
-                    <h3>Live Preview</h3>
-                    <p>Instantly preview the generated code side-by-side with your original screenshot. Compare, iterate, and refine until it's perfect.</p>
+                    <h3>Live Preview + Refinement</h3>
+                    <p>Preview generated code side-by-side with your screenshot. An optional AI refinement pass automatically compares and fixes visual discrepancies.</p>
                 </div>
                 <div class="feature-card">
                     <div class="feature-icon">&#128196;</div>
@@ -847,29 +843,22 @@
                     <p>Every conversion is saved locally. Browse your history, re-export previous results, or continue iterating on past captures.</p>
                 </div>
                 <div class="feature-card">
-                    <div class="feature-icon">&#127760;</div>
-                    <h3>Multi-Language Support</h3>
-                    <p>Full interface in English, French, and Spanish. More languages coming soon. Built for developers worldwide.</p>
+                    <div class="feature-icon">&#9999;&#65039;</div>
+                    <h3>Custom Instructions</h3>
+                    <p>Guide the AI with your preferences — dark theme, responsive layout, specific styling. Instructions are saved automatically for your next conversion.</p>
                 </div>
             </div>
         </section>
 
         <!-- AI Providers -->
         <section class="providers">
-            <p class="providers-label">Works with the AI models you already use</p>
+            <p class="providers-label">Integrates with the AI APIs you already use</p>
             <div class="provider-logos">
-                <div class="provider">
-                    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
-                    Claude
-                </div>
-                <div class="provider">
-                    <svg viewBox="0 0 24 24" fill="currentColor"><circle cx="12" cy="12" r="10" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="M12 2a10 10 0 0 1 0 20" fill="currentColor" opacity="0.3"/><circle cx="12" cy="12" r="3"/></svg>
-                    OpenAI
-                </div>
-                <div class="provider">
-                    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2L4 6.5v11L12 22l8-4.5v-11L12 2zm0 2.16l5.93 3.34L12 10.84 6.07 7.5 12 4.16z"/></svg>
-                    Gemini
-                </div>
+                <div class="provider">Anthropic Claude</div>
+                <div class="provider"><span style="color: var(--border);">&middot;</span></div>
+                <div class="provider">OpenAI</div>
+                <div class="provider"><span style="color: var(--border);">&middot;</span></div>
+                <div class="provider">Google Gemini</div>
             </div>
         </section>
 
@@ -887,7 +876,11 @@
                     </li>
                     <li>
                         <svg fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg>
-                        All AI providers supported
+                        All 5 frameworks &amp; 3 AI providers
+                    </li>
+                    <li>
+                        <svg fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg>
+                        AI refinement pass &amp; custom instructions
                     </li>
                     <li>
                         <svg fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg>
@@ -895,7 +888,7 @@
                     </li>
                     <li>
                         <svg fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg>
-                        3 free conversions to try first
+                        5 free conversions to try first
                     </li>
                 </ul>
             </div>
@@ -903,7 +896,12 @@
 
         <!-- Footer -->
         <footer>
-            <span>&copy; 2026 Pixel. Built by <a href="https://github.com/matpb" target="_blank">Mat</a>.</span>
+            <div>
+                <span>&copy; 2026 Pixel. Built by <a href="https://github.com/matpb" target="_blank">Mat</a>.</span>
+                <p style="font-size: 0.75rem; color: var(--text-muted); opacity: 0.5; margin-top: 8px; max-width: 520px; line-height: 1.5;">
+                    Claude is a trademark of Anthropic, PBC. OpenAI is a trademark of OpenAI, Inc. Gemini is a trademark of Google LLC. Pixel is not affiliated with, endorsed by, or sponsored by any of these companies.
+                </p>
+            </div>
             <div class="footer-links">
                 <a href="privacy.html">Privacy Policy</a>
                 <a href="https://github.com/matpb/pixel-app" target="_blank">GitHub</a>
