@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html><head><style>
+  *{margin:0;padding:0}
+  html,body{background:transparent}
+  body>img{display:block;position:absolute;top:0;left:0}
+</style></head>
+<body><img src="pixel-logo.svg" id="i"></body>
+<script>
+  // Set size from URL hash (e.g. #512)
+  const sz = parseInt(location.hash.slice(1)) || 512;
+  document.getElementById('i').width = sz;
+  document.getElementById('i').height = sz;
+  document.body.style.width = sz + 'px';
+  document.body.style.height = sz + 'px';
+</script></html>
